@@ -5,6 +5,9 @@ body {
 	min-height: 1200px;
 	overflow: auto;
   }
+  #musicPlayer{
+	display: none;
+  }
 #position{
 	position:fixed;
 	bottom:780px;
