@@ -8,7 +8,24 @@
 </head>
 <body>
    
-   
+    <button onclick="playMusic()" style="position:fixed;
+    bottom:520px;
+    left:430px;">Click me</button>
+    <iframe 
+        id="musicPlayer"
+        src="https://www.youtube.com/embed/fu9yk7gCTbc?loop=1&playlist=fu9yk7gCTbc&controls=0&modestbranding=1"
+        frameborder="0"
+        allow="autoplay"
+        style="display:hidden">
+    </iframe>
+
+    <script>
+        function playMusic() {
+            const player = document.getElementById('musicPlayer');
+            player.src += "&autoplay=1";
+        }
+    </script>
+
     <div id="position" class="sunflower">
         <div class="head">
             <div id="eye-1" class="eye"></div>
